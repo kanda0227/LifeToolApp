@@ -12,6 +12,7 @@
 		F25094251FEDEFC6004C299C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25094231FEDEFC6004C299C /* Main.storyboard */; };
 		F25094271FEDEFC6004C299C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25094261FEDEFC6004C299C /* Assets.xcassets */; };
 		F250942A1FEDEFC6004C299C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25094281FEDEFC6004C299C /* LaunchScreen.storyboard */; };
+		F25094341FEDF537004C299C /* DivinationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25094331FEDF537004C299C /* DivinationCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F25094261FEDEFC6004C299C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F25094291FEDEFC6004C299C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F250942B1FEDEFC6004C299C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25094331FEDF537004C299C /* DivinationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DivinationCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				F250941F1FEDEFC6004C299C /* AppDelegate.swift */,
 				F25094211FEDEFC6004C299C /* ViewController.swift */,
 				F25094231FEDEFC6004C299C /* Main.storyboard */,
+				F25094331FEDF537004C299C /* DivinationCell.xib */,
 				F25094261FEDEFC6004C299C /* Assets.xcassets */,
 				F25094281FEDEFC6004C299C /* LaunchScreen.storyboard */,
 				F250942B1FEDEFC6004C299C /* Info.plist */,
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25094341FEDF537004C299C /* DivinationCell.xib in Resources */,
 				F250942A1FEDEFC6004C299C /* LaunchScreen.storyboard in Resources */,
 				F25094271FEDEFC6004C299C /* Assets.xcassets in Resources */,
 				F25094251FEDEFC6004C299C /* Main.storyboard in Resources */,
