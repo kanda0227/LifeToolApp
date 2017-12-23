@@ -39,7 +39,7 @@
                             <constraint firstAttribute="height" constant="35" id="Vwr-Fc-Krh"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                        <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </label>
                 </subviews>
@@ -54,7 +54,7 @@
                     <constraint firstItem="l8E-9C-EaJ" firstAttribute="centerX" secondItem="5WY-xW-xLp" secondAttribute="centerX" id="jz4-6q-1QJ"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="pan-Jd-hvf" firstAttribute="height" secondItem="gQI-69-gBs" secondAttribute="height" id="e3y-dI-hfq"/>
             </constraints>

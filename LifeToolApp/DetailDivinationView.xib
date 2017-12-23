@@ -31,7 +31,7 @@
                     <rect key="frame" x="30" y="636.5" width="315" height="81.5"/>
                     <color key="tintColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="総合" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6c-PX-34W">
@@ -41,7 +41,7 @@
                         <constraint firstAttribute="height" constant="21" id="DxB-QR-7sm"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISB-xx-Lmy" customClass="Divination5StepEvaluationView" customModule="LifeToolApp" customModuleProvider="target">
@@ -68,7 +68,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="tintColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="cpg-eM-hT3"/>
@@ -90,7 +90,7 @@
                         <constraint firstAttribute="width" constant="37" id="MSN-uj-GDM"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhK-zj-MfD" customClass="Divination5StepEvaluationView" customModule="LifeToolApp" customModuleProvider="target">
@@ -117,7 +117,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="tintColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="1tU-ml-MN7"/>
@@ -139,7 +139,7 @@
                         <constraint firstAttribute="height" constant="21" id="Z9O-ec-aWN"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9w-9P-1DG" customClass="Divination5StepEvaluationView" customModule="LifeToolApp" customModuleProvider="target">
@@ -166,7 +166,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="tintColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="4f4-7L-CBO"/>
@@ -188,7 +188,7 @@
                         <constraint firstAttribute="width" constant="37" id="oAN-s4-jWq"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-n9-Ban" customClass="Divination5StepEvaluationView" customModule="LifeToolApp" customModuleProvider="target">
@@ -215,7 +215,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="tintColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="Pap-1E-ekm"/>
@@ -237,7 +237,7 @@
                         <constraint firstAttribute="height" constant="21" id="duk-a6-wKM"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ER7-4e-bwd">
@@ -251,14 +251,14 @@
                     <rect key="frame" x="145" y="544.5" width="200" height="21"/>
                     <color key="tintColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzj-8n-Qx9">
                     <rect key="frame" x="145" y="585.5" width="200" height="21"/>
                     <color key="tintColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アイテム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRM-sD-XbT">
@@ -269,11 +269,11 @@
                         <constraint firstAttribute="height" constant="21" id="y1y-JR-9Na"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="pbW-fi-oXM" firstAttribute="centerX" secondItem="p7e-YJ-8ar" secondAttribute="centerX" id="2Jm-MP-cZG"/>
                 <constraint firstItem="V6W-7N-5iJ" firstAttribute="top" secondItem="mRM-sD-XbT" secondAttribute="top" constant="1" id="395-Xv-Ukh"/>
