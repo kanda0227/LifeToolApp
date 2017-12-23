@@ -11,16 +11,47 @@ import UIKit
 /// 占い画面
 final class DivinationViewController: UIViewController {
     
+    @IBOutlet private weak var tableView: UITableView!
+    
     var top3Sign: [Sign?]?
     var userResult: DivinationResult?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "DivinationCell", bundle: nil), forCellReuseIdentifier: "top3SignCell")
+        
+        requestAPI()
+    }
+    
+    /// 占いAPIのリクエスト
+    private func requestAPI() {
         APIRequestHelper<DivinationResponseItem>.requestAPI(.divination, completion:  { [weak self] (data: DivinationResponseItem) -> Void in
             guard let _self = self else { return }
             _self.top3Sign = DivinationLogic.filterTop3(data.results)
             _self.userResult = DivinationLogic.userConstellationData(data.results, userSign: .pisces)
+            _self.tableView.reloadData()
         })
+    }
+}
+
+extension DivinationViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "top3SignCell", for: indexPath) as! DivinationCell
+        if let top3Sign = top3Sign, let sign = top3Sign[indexPath.row] {
+            cell.configure(sign: sign)
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
