@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// 星座の列挙型
 enum Sign: Int {
@@ -65,6 +66,32 @@ extension Sign {
             return "水瓶座"
         case .pisces:
             return "魚座"
+        }
+    }
+    
+    public var image: UIImage? {
+        switch self {
+        case .cancer:
+            return #imageLiteral(resourceName: "cancer")
+        case .leo:
+            return #imageLiteral(resourceName: "leo")
+        case .virgo:
+            return #imageLiteral(resourceName: "virgo")
+        case .libra:
+            return #imageLiteral(resourceName: "libra")
+        case .scorpius:
+            return #imageLiteral(resourceName: "scorpius")
+        case .sagittarius:
+            return #imageLiteral(resourceName: "sagittarius")
+        case .capriconus:
+            return #imageLiteral(resourceName: "capriconus")
+        case .aquarius:
+            return #imageLiteral(resourceName: "aquarius")
+        case .pisces:
+            return #imageLiteral(resourceName: "pisces")
+        default:
+            // まだ画像取り込んでない
+            return nil
         }
     }
     

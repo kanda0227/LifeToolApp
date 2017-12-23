@@ -26,6 +26,21 @@ final class DivinationViewController: UIViewController {
         requestAPI()
     }
     
+    @IBAction func tapReloadButton(_ sender: UIBarButtonItem) {
+        tableView.reloadData()
+    }
+    
+    @IBAction func tapDetailButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "pushDetail", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if sender is UIButton {
+            let vc = segue.destination as? DetailDivinationViewController
+            vc?.userResult = self.userResult
+        }
+    }
+    
     /// 占いAPIのリクエスト
     private func requestAPI() {
         APIRequestHelper<DivinationResponseItem>.requestAPI(.divination, completion:  { [weak self] (data: DivinationResponseItem) -> Void in
@@ -46,7 +61,8 @@ extension DivinationViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "top3SignCell", for: indexPath) as! DivinationCell
         if let top3Sign = top3Sign, let sign = top3Sign[indexPath.row] {
-            cell.configure(sign: sign)
+            // ランクは1から
+            cell.configure(sign: sign, rank: indexPath.row + 1)
         }
         return cell
     }

@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,29 +20,48 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="うお座" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8E-9C-EaJ">
-                        <rect key="frame" x="135" y="31" width="105" height="35"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="erR-ZH-1Ds">
+                        <rect key="frame" x="16" y="6.5" width="84" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="erR-ZH-1Ds" secondAttribute="height" multiplier="1:1" id="ap9-g2-0tn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pan-Jd-hvf">
+                        <rect key="frame" x="276" y="-1" width="99" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pan-Jd-hvf" secondAttribute="height" multiplier="1:1" id="2ju-8K-GGj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8E-9C-EaJ">
+                        <rect key="frame" x="120" y="31" width="136" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Vwr-Fc-Krh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erR-ZH-1Ds">
-                        <rect key="frame" x="16" y="11" width="75" height="75"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pan-Jd-hvf">
-                        <rect key="frame" x="284" y="11" width="75" height="75"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pan-Jd-hvf" secondAttribute="trailing" id="18v-Vx-snc"/>
+                    <constraint firstItem="erR-ZH-1Ds" firstAttribute="centerY" secondItem="5WY-xW-xLp" secondAttribute="centerY" id="4pq-2p-Di0"/>
+                    <constraint firstItem="pan-Jd-hvf" firstAttribute="centerY" secondItem="l8E-9C-EaJ" secondAttribute="centerY" id="SR6-G6-U8c"/>
+                    <constraint firstItem="l8E-9C-EaJ" firstAttribute="leading" secondItem="erR-ZH-1Ds" secondAttribute="trailing" constant="20" id="XCX-rY-AXE"/>
+                    <constraint firstItem="l8E-9C-EaJ" firstAttribute="centerY" secondItem="erR-ZH-1Ds" secondAttribute="centerY" id="bSz-3K-eGm"/>
+                    <constraint firstItem="pan-Jd-hvf" firstAttribute="leading" secondItem="l8E-9C-EaJ" secondAttribute="trailing" constant="20" id="c0F-20-440"/>
+                    <constraint firstItem="erR-ZH-1Ds" firstAttribute="leading" secondItem="5WY-xW-xLp" secondAttribute="leadingMargin" id="ehQ-pC-YZF"/>
+                    <constraint firstItem="l8E-9C-EaJ" firstAttribute="centerX" secondItem="5WY-xW-xLp" secondAttribute="centerX" id="jz4-6q-1QJ"/>
+                </constraints>
             </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="pan-Jd-hvf" firstAttribute="height" secondItem="gQI-69-gBs" secondAttribute="height" id="e3y-dI-hfq"/>
+            </constraints>
             <connections>
                 <outlet property="rankImageView" destination="erR-ZH-1Ds" id="hqw-61-hTz"/>
                 <outlet property="signImageView" destination="pan-Jd-hvf" id="DdQ-Qo-i1e"/>
                 <outlet property="signLabel" destination="l8E-9C-EaJ" id="PpJ-pM-9Cp"/>
             </connections>
-            <point key="canvasLocation" x="-67.5" y="-65.5"/>
+            <point key="canvasLocation" x="-66" y="-32"/>
         </tableViewCell>
     </objects>
 </document>
