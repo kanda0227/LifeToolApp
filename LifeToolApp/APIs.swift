@@ -26,8 +26,10 @@ extension APIs {
             // 未定
             return ""
         case .divination:
-//            return "http://api.jugemkey.jp/api/horoscope/free"
-            return "http://api.jugemkey.jp/api/horoscope/free/2017/12/01"
+            let dateFomatter = DateFormatter()
+            dateFomatter.dateFormat = "yyyy/MM/dd"
+            let date = dateFomatter.string(from: Date())
+            return "http://api.jugemkey.jp/api/horoscope/free/" + date
         case .rails:
             // 未定
             return ""

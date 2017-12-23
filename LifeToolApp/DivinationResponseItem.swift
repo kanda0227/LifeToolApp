@@ -36,7 +36,10 @@ struct DivinationResponse: Mappable {
 /// 日付に対するすべての星座の占い結果
 struct DivinationDateData: Mappable {
     var date: String {
-        return "2017/12/01"
+        // ここは本来であればURLを作成した時の日付を使わないといけない
+        let dateFomatter = DateFormatter()
+        dateFomatter.dateFormat = "yyyy/MM/dd"
+        return dateFomatter.string(from: Date())
     }
     var results: [DivinationResult]!
     
