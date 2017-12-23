@@ -88,7 +88,6 @@
         <!--占い-->
         <scene sceneID="heF-d4-AHN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zUv-7L-wVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="KVk-hO-Ew5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="占い" id="WEQ-rz-SVk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NdV-wD-cDM">
@@ -99,18 +98,19 @@
                         <segue destination="KaI-4h-ykr" kind="relationship" relationship="rootViewController" id="hgb-Fq-C8R"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUv-7L-wVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1338" y="441"/>
         </scene>
-        <!--View Controller-->
+        <!--Divination View Controller-->
         <scene sceneID="SPp-rd-qha">
             <objects>
-                <viewController id="KaI-4h-ykr" sceneMemberID="viewController">
+                <viewController id="KaI-4h-ykr" customClass="DivinationViewController" customModule="LifeToolApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="stI-SJ-tnD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D6V-pw-6FD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D6V-pw-6FD">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -194,6 +194,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lbl-W4-G6n"/>
+        <segue reference="r5R-00-Q1o"/>
     </inferredMetricsTieBreakers>
 </document>
