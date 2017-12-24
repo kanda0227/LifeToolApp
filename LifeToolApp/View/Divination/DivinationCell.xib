@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" focusStyle="custom" rowHeight="99" id="gQI-69-gBs" customClass="DivinationCell" customModule="LifeToolApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gQI-69-gBs" id="5WY-xW-xLp">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="erR-ZH-1Ds">
+                        <rect key="frame" x="16" y="6.5" width="84" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="erR-ZH-1Ds" secondAttribute="height" multiplier="1:1" id="ap9-g2-0tn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pan-Jd-hvf">
+                        <rect key="frame" x="276" y="-1" width="99" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pan-Jd-hvf" secondAttribute="height" multiplier="1:1" id="2ju-8K-GGj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8E-9C-EaJ">
+                        <rect key="frame" x="120" y="31" width="136" height="35"/>
+                        <color key="tintColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Vwr-Fc-Krh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="highlightedColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pan-Jd-hvf" secondAttribute="trailing" id="18v-Vx-snc"/>
+                    <constraint firstItem="erR-ZH-1Ds" firstAttribute="centerY" secondItem="5WY-xW-xLp" secondAttribute="centerY" id="4pq-2p-Di0"/>
+                    <constraint firstItem="pan-Jd-hvf" firstAttribute="centerY" secondItem="l8E-9C-EaJ" secondAttribute="centerY" id="SR6-G6-U8c"/>
+                    <constraint firstItem="l8E-9C-EaJ" firstAttribute="leading" secondItem="erR-ZH-1Ds" secondAttribute="trailing" constant="20" id="XCX-rY-AXE"/>
+                    <constraint firstItem="l8E-9C-EaJ" firstAttribute="centerY" secondItem="erR-ZH-1Ds" secondAttribute="centerY" id="bSz-3K-eGm"/>
+                    <constraint firstItem="pan-Jd-hvf" firstAttribute="leading" secondItem="l8E-9C-EaJ" secondAttribute="trailing" constant="20" id="c0F-20-440"/>
+                    <constraint firstItem="erR-ZH-1Ds" firstAttribute="leading" secondItem="5WY-xW-xLp" secondAttribute="leadingMargin" id="ehQ-pC-YZF"/>
+                    <constraint firstItem="l8E-9C-EaJ" firstAttribute="centerX" secondItem="5WY-xW-xLp" secondAttribute="centerX" id="jz4-6q-1QJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="pan-Jd-hvf" firstAttribute="height" secondItem="gQI-69-gBs" secondAttribute="height" id="e3y-dI-hfq"/>
+            </constraints>
+            <connections>
+                <outlet property="rankImageView" destination="erR-ZH-1Ds" id="hqw-61-hTz"/>
+                <outlet property="signImageView" destination="pan-Jd-hvf" id="DdQ-Qo-i1e"/>
+                <outlet property="signLabel" destination="l8E-9C-EaJ" id="PpJ-pM-9Cp"/>
+            </connections>
+            <point key="canvasLocation" x="-66" y="-32"/>
+        </tableViewCell>
+    </objects>
+</document>
