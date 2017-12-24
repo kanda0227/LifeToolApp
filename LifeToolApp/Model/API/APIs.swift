@@ -23,13 +23,17 @@ extension APIs {
     public var url: String {
         switch self {
         case .weather:
-            // 未定
-            return ""
+            // このへん直書きしてるの直したい
+            let appid = "APPID=c31afe1056c098c311ca7882f2b8d596"
+            let latAndLon = "&lat=35&lon=140"
+            return "http://api.openweathermap.org/data/2.5/weather?" + appid + latAndLon
+            
         case .divination:
             let dateFomatter = DateFormatter()
             dateFomatter.dateFormat = "yyyy/MM/dd"
             let date = dateFomatter.string(from: Date())
             return "http://api.jugemkey.jp/api/horoscope/free/" + date
+            
         case .rails:
             // 未定
             return ""

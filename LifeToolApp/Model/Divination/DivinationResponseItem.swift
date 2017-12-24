@@ -9,7 +9,6 @@
 import Foundation
 import ObjectMapper
 
-
 final class DivinationResponseItem: APIResponseItem {
     
     let results: [DivinationResult]
@@ -54,15 +53,25 @@ struct DivinationDateData: Mappable {
 
 /// 星座ごとの占い結果
 struct DivinationResult: Mappable {
+    /// 占いの内容
     var content: String!
+    /// ラッキーアイテム
     var item: String!
+    /// 金運
     var money: Int!
+    /// 総合運
     var total: Int!
+    /// 仕事運
     var job: Int!
+    /// ラッキーカラー
     var color: String!
+    /// 恋愛運
     var love: Int!
+    /// ランキング
     var rank: Int!
+    /// 星座名
     var signData: String!
+    
     var sign: Sign? {
         return Sign(name: signData)
     }

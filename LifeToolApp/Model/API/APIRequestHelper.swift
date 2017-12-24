@@ -16,6 +16,7 @@ final class APIRequestHelper<ResponseItem: APIResponseItem> {
     static public func requestAPI(_ apis: APIs, completion: @escaping (ResponseItem) -> Void) {
         Alamofire.request(apis.url).responseString { response in
             guard let object: String = response.result.value else { return }
+            print(object)
             completion(APIRequestHelper.parseData(jsonString: object))
         }
     }

@@ -28,6 +28,10 @@
 		F27B36211FEE7CC6008EEAEE /* Divination5StepEvaluationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36201FEE7CC6008EEAEE /* Divination5StepEvaluationView.swift */; };
 		F27B36231FEE7F5F008EEAEE /* DetailDivinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36221FEE7F5F008EEAEE /* DetailDivinationView.swift */; };
 		F27B36251FEE8236008EEAEE /* DetailDivinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36241FEE8236008EEAEE /* DetailDivinationViewController.swift */; };
+		F27B362E1FEF7CC6008EEAEE /* WeatherResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B362D1FEF7CC6008EEAEE /* WeatherResponseItem.swift */; };
+		F27B36301FEF836D008EEAEE /* Wether.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B362F1FEF836D008EEAEE /* Wether.swift */; };
+		F27B36321FEF8E12008EEAEE /* WindChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36311FEF8E12008EEAEE /* WindChecker.swift */; };
+		F27B36351FEF9162008EEAEE /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36341FEF9162008EEAEE /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		F27B36221FEE7F5F008EEAEE /* DetailDivinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDivinationView.swift; sourceTree = "<group>"; };
 		F27B36241FEE8236008EEAEE /* DetailDivinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDivinationViewController.swift; sourceTree = "<group>"; };
 		F27B36261FEF5A16008EEAEE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F27B362D1FEF7CC6008EEAEE /* WeatherResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseItem.swift; sourceTree = "<group>"; };
+		F27B362F1FEF836D008EEAEE /* Wether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wether.swift; sourceTree = "<group>"; };
+		F27B36311FEF8E12008EEAEE /* WindChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindChecker.swift; sourceTree = "<group>"; };
+		F27B36341FEF9162008EEAEE /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		F27B36281FEF5AD1008EEAEE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F27B36331FEF9148008EEAEE /* Weather */,
 				F25094261FEDEFC6004C299C /* Assets.xcassets */,
 				F27B36271FEF5ABD008EEAEE /* Divination */,
 				F25094281FEDEFC6004C299C /* LaunchScreen.storyboard */,
@@ -139,6 +148,7 @@
 		F27B36291FEF5AE1008EEAEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F27B362C1FEF7CB0008EEAEE /* Wether */,
 				F27B362A1FEF5B0A008EEAEE /* API */,
 				F27B362B1FEF5B19008EEAEE /* Divination */,
 			);
@@ -163,6 +173,24 @@
 				F250943D1FEDFE8E004C299C /* Sign.swift */,
 			);
 			path = Divination;
+			sourceTree = "<group>";
+		};
+		F27B362C1FEF7CB0008EEAEE /* Wether */ = {
+			isa = PBXGroup;
+			children = (
+				F27B362D1FEF7CC6008EEAEE /* WeatherResponseItem.swift */,
+				F27B362F1FEF836D008EEAEE /* Wether.swift */,
+				F27B36311FEF8E12008EEAEE /* WindChecker.swift */,
+			);
+			path = Wether;
+			sourceTree = "<group>";
+		};
+		F27B36331FEF9148008EEAEE /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F27B36341FEF9162008EEAEE /* WeatherViewController.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,13 +288,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25094421FEE0F6E004C299C /* APIProtocols.swift in Sources */,
+				F27B36351FEF9162008EEAEE /* WeatherViewController.swift in Sources */,
 				F25094401FEE0F44004C299C /* APIRequestHelper.swift in Sources */,
 				F25094381FEDFC11004C299C /* APIs.swift in Sources */,
+				F27B36321FEF8E12008EEAEE /* WindChecker.swift in Sources */,
 				F25094201FEDEFC6004C299C /* AppDelegate.swift in Sources */,
 				F27B36231FEE7F5F008EEAEE /* DetailDivinationView.swift in Sources */,
 				F27B36251FEE8236008EEAEE /* DetailDivinationViewController.swift in Sources */,
+				F27B362E1FEF7CC6008EEAEE /* WeatherResponseItem.swift in Sources */,
 				F27B36211FEE7CC6008EEAEE /* Divination5StepEvaluationView.swift in Sources */,
 				F27B361D1FEE61C4008EEAEE /* DivinationCell.swift in Sources */,
+				F27B36301FEF836D008EEAEE /* Wether.swift in Sources */,
 				F27B361B1FEE5941008EEAEE /* DivinationLogic.swift in Sources */,
 				F250943A1FEDFD38004C299C /* DivinationResponseItem.swift in Sources */,
 				F25094361FEDFA63004C299C /* DivinationViewController.swift in Sources */,

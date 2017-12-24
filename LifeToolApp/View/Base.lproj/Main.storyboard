@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="-1338" y="-280"/>
         </scene>
-        <!--View Controller-->
+        <!--Weather View Controller-->
         <scene sceneID="asv-hB-psB">
             <objects>
-                <viewController id="VVX-Pg-6Gr" sceneMemberID="viewController">
+                <viewController id="VVX-Pg-6Gr" customClass="WeatherViewController" customModule="LifeToolApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HIj-La-Yny">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
             <objects>
                 <viewController id="22h-MS-xBL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZFS-vS-PuF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="dLY-Jf-Inx"/>
@@ -278,7 +278,7 @@
         <image name="weather_s" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="r5R-00-Q1o"/>
+        <segue reference="lbl-W4-G6n"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
