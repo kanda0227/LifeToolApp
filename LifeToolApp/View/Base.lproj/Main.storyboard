@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="loc-nz-x5d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MOb-6N-GYM">
+            <objects>
+                <tabBarController id="loc-nz-x5d" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="16x-vl-0EW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.9882352941176471" green="0.69803921568627447" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WTd-yY-QsB" kind="relationship" relationship="viewControllers" id="nJ1-Zz-YYT"/>
+                        <segue destination="KVk-hO-Ew5" kind="relationship" relationship="viewControllers" id="9TP-np-bza"/>
+                        <segue destination="Z0F-Eb-Y8J" kind="relationship" relationship="viewControllers" id="wK7-rI-9QZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4q-3i-Ken" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2225" y="442"/>
+        </scene>
+        <!--天気-->
+        <scene sceneID="1Mf-4W-u4W">
+            <objects>
+                <navigationController id="WTd-yY-QsB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="天気" image="weather_s" selectedImage="weather_n" id="sCJ-Hq-dn5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Pl-cA-hon">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.69803921570000005" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.69019607839999997" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VVX-Pg-6Gr" kind="relationship" relationship="rootViewController" id="odM-Ft-DAQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pG-ic-kEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="-280"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="asv-hB-psB">
+            <objects>
+                <viewController id="VVX-Pg-6Gr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HIj-La-Yny">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="tCh-pe-P09"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WN7-AL-xIU">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="icA-cF-jjw">
+                            <connections>
+                                <segue destination="22h-MS-xBL" kind="popoverPresentation" popoverAnchorBarButtonItem="icA-cF-jjw" id="lbl-W4-G6n">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYZ-LK-uyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="-280"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gQX-fr-LEc">
+            <objects>
+                <viewController id="22h-MS-xBL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZFS-vS-PuF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="dLY-Jf-Inx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLz-mj-FaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="-1035"/>
+        </scene>
+        <!--占い-->
+        <scene sceneID="heF-d4-AHN">
+            <objects>
+                <navigationController id="KVk-hO-Ew5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="占い" image="divination_n" selectedImage="divination_s" id="WEQ-rz-SVk">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NdV-wD-cDM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.69803921570000005" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.69019607839999997" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KaI-4h-ykr" kind="relationship" relationship="rootViewController" id="hgb-Fq-C8R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUv-7L-wVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="441"/>
+        </scene>
+        <!--Divination View Controller-->
+        <scene sceneID="SPp-rd-qha">
+            <objects>
+                <viewController id="KaI-4h-ykr" customClass="DivinationViewController" customModule="LifeToolApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="stI-SJ-tnD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D6V-pw-6FD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="300"/>
+                                <color key="backgroundColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="3cQ-xK-4EU"/>
+                                </constraints>
+                                <color key="separatorColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6s-ny-2CI">
+                                <rect key="frame" x="95" y="402" width="184" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="v6O-oL-hNE"/>
+                                </constraints>
+                                <state key="normal" title="自分の星座をくわしくみる">
+                                    <color key="titleColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapDetailButton:" destination="KaI-4h-ykr" eventType="touchUpInside" id="Hua-v4-KZZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="D6V-pw-6FD" firstAttribute="leading" secondItem="lBh-wT-0tW" secondAttribute="leading" id="Bac-Go-8zp"/>
+                            <constraint firstItem="lBh-wT-0tW" firstAttribute="trailing" secondItem="D6V-pw-6FD" secondAttribute="trailing" id="Qnz-pd-rZC"/>
+                            <constraint firstItem="D6V-pw-6FD" firstAttribute="top" secondItem="lBh-wT-0tW" secondAttribute="top" id="bSe-UB-P7z"/>
+                            <constraint firstItem="D6s-ny-2CI" firstAttribute="centerX" secondItem="lBh-wT-0tW" secondAttribute="centerX" id="h8F-Pe-3ql"/>
+                            <constraint firstItem="D6s-ny-2CI" firstAttribute="top" secondItem="D6V-pw-6FD" secondAttribute="bottom" constant="38" id="xPi-kt-fCj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lBh-wT-0tW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cjH-cs-dxZ">
+                        <rightBarButtonItems>
+                            <barButtonItem title="設定" id="3mZ-rk-Lfi">
+                                <connections>
+                                    <segue destination="22h-MS-xBL" kind="show" id="r5R-00-Q1o"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="更新" id="hEx-FH-izJ">
+                                <connections>
+                                    <action selector="tapReloadButton:" destination="KaI-4h-ykr" id="WUm-1h-azn"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="D6V-pw-6FD" id="dDR-aR-lZ5"/>
+                        <segue destination="Im1-Of-Fes" kind="push" identifier="pushDetail" id="lvx-I5-ELE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57d-wu-icx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="441"/>
+        </scene>
+        <!--Detail Divination View Controller-->
+        <scene sceneID="pFt-Kg-6PL">
+            <objects>
+                <viewController id="Im1-Of-Fes" customClass="DetailDivinationViewController" customModule="LifeToolApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HZQ-HN-yex">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-MF-nQ6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WKp-MF-nQ6" firstAttribute="bottom" secondItem="h1e-93-ggJ" secondAttribute="bottom" id="05n-Z2-F9H"/>
+                            <constraint firstItem="WKp-MF-nQ6" firstAttribute="trailing" secondItem="h1e-93-ggJ" secondAttribute="trailing" id="0MC-7j-22i"/>
+                            <constraint firstItem="WKp-MF-nQ6" firstAttribute="top" secondItem="h1e-93-ggJ" secondAttribute="top" id="G0x-Vz-VCL"/>
+                            <constraint firstItem="WKp-MF-nQ6" firstAttribute="leading" secondItem="h1e-93-ggJ" secondAttribute="leading" id="mYk-1g-QSu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h1e-93-ggJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xdd-QC-TOF"/>
+                    <connections>
+                        <outlet property="scrollView" destination="WKp-MF-nQ6" id="Zla-7s-Cue"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDD-et-K7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="440.32983508245883"/>
+        </scene>
+        <!--電車情報-->
+        <scene sceneID="Cw6-q4-7Ms">
+            <objects>
+                <navigationController id="Z0F-Eb-Y8J" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="電車情報" image="rails_s" selectedImage="rails_n" id="AzR-3m-Lwr"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aNE-Jz-wl3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.69803921570000005" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.69019607839999997" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7kl-G7-RLL" kind="relationship" relationship="rootViewController" id="8Zj-WW-aC6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M27-QI-qat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="1182"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Svi-Y0-e6M">
+            <objects>
+                <viewController id="7kl-G7-RLL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxi-i5-z4c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="wGe-A7-H89"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dfq-gN-XMU">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="yia-kl-Wr4">
+                            <connections>
+                                <segue destination="22h-MS-xBL" kind="popoverPresentation" popoverAnchorBarButtonItem="yia-kl-Wr4" id="qlf-CK-LOC">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtX-Es-6As" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="1182"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="divination_n" width="30" height="30"/>
+        <image name="divination_s" width="30" height="30"/>
+        <image name="rails_n" width="30" height="30"/>
+        <image name="rails_s" width="30" height="30"/>
+        <image name="weather_n" width="30" height="30"/>
+        <image name="weather_s" width="30" height="30"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="r5R-00-Q1o"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>

@@ -16,7 +16,6 @@
 		F25094361FEDFA63004C299C /* DivinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25094351FEDFA63004C299C /* DivinationViewController.swift */; };
 		F25094381FEDFC11004C299C /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25094371FEDFC11004C299C /* APIs.swift */; };
 		F250943A1FEDFD38004C299C /* DivinationResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25094391FEDFD38004C299C /* DivinationResponseItem.swift */; };
-		F250943C1FEDFD46004C299C /* DivinationRequestItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250943B1FEDFD46004C299C /* DivinationRequestItem.swift */; };
 		F250943E1FEDFE8E004C299C /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250943D1FEDFE8E004C299C /* Sign.swift */; };
 		F25094401FEE0F44004C299C /* APIRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250943F1FEE0F44004C299C /* APIRequestHelper.swift */; };
 		F25094421FEE0F6E004C299C /* APIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25094411FEE0F6E004C299C /* APIProtocols.swift */; };
@@ -43,7 +42,6 @@
 		F25094351FEDFA63004C299C /* DivinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationViewController.swift; sourceTree = "<group>"; };
 		F25094371FEDFC11004C299C /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		F25094391FEDFD38004C299C /* DivinationResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationResponseItem.swift; sourceTree = "<group>"; };
-		F250943B1FEDFD46004C299C /* DivinationRequestItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivinationRequestItem.swift; sourceTree = "<group>"; };
 		F250943D1FEDFE8E004C299C /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
 		F250943F1FEE0F44004C299C /* APIRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestHelper.swift; sourceTree = "<group>"; };
 		F25094411FEE0F6E004C299C /* APIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocols.swift; sourceTree = "<group>"; };
@@ -56,6 +54,7 @@
 		F27B36201FEE7CC6008EEAEE /* Divination5StepEvaluationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divination5StepEvaluationView.swift; sourceTree = "<group>"; };
 		F27B36221FEE7F5F008EEAEE /* DetailDivinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDivinationView.swift; sourceTree = "<group>"; };
 		F27B36241FEE8236008EEAEE /* DetailDivinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDivinationViewController.swift; sourceTree = "<group>"; };
+		F27B36261FEF5A16008EEAEE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,25 +91,10 @@
 		F250941E1FEDEFC6004C299C /* LifeToolApp */ = {
 			isa = PBXGroup;
 			children = (
+				F27B36281FEF5AD1008EEAEE /* View */,
+				F27B36291FEF5AE1008EEAEE /* Model */,
 				F250941F1FEDEFC6004C299C /* AppDelegate.swift */,
 				F25094211FEDEFC6004C299C /* ViewController.swift */,
-				F25094231FEDEFC6004C299C /* Main.storyboard */,
-				F27B36241FEE8236008EEAEE /* DetailDivinationViewController.swift */,
-				F27B361E1FEE6B4D008EEAEE /* DetailDivinationView.xib */,
-				F27B36201FEE7CC6008EEAEE /* Divination5StepEvaluationView.swift */,
-				F27B36221FEE7F5F008EEAEE /* DetailDivinationView.swift */,
-				F27B361A1FEE5941008EEAEE /* DivinationLogic.swift */,
-				F25094351FEDFA63004C299C /* DivinationViewController.swift */,
-				F25094371FEDFC11004C299C /* APIs.swift */,
-				F25094411FEE0F6E004C299C /* APIProtocols.swift */,
-				F250943F1FEE0F44004C299C /* APIRequestHelper.swift */,
-				F25094391FEDFD38004C299C /* DivinationResponseItem.swift */,
-				F250943D1FEDFE8E004C299C /* Sign.swift */,
-				F250943B1FEDFD46004C299C /* DivinationRequestItem.swift */,
-				F25094331FEDF537004C299C /* DivinationCell.xib */,
-				F27B361C1FEE61C4008EEAEE /* DivinationCell.swift */,
-				F25094261FEDEFC6004C299C /* Assets.xcassets */,
-				F25094281FEDEFC6004C299C /* LaunchScreen.storyboard */,
 				F250942B1FEDEFC6004C299C /* Info.plist */,
 			);
 			path = LifeToolApp;
@@ -119,11 +103,66 @@
 		F25094431FEE1321004C299C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F27B36261FEF5A16008EEAEE /* CoreLocation.framework */,
 				F27B36181FEE23CA008EEAEE /* ObjectMapper.framework */,
 				F25094441FEE1322004C299C /* Alamofire.framework */,
 				F25094451FEE1322004C299C /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F27B36271FEF5ABD008EEAEE /* Divination */ = {
+			isa = PBXGroup;
+			children = (
+				F27B36241FEE8236008EEAEE /* DetailDivinationViewController.swift */,
+				F27B36201FEE7CC6008EEAEE /* Divination5StepEvaluationView.swift */,
+				F27B361E1FEE6B4D008EEAEE /* DetailDivinationView.xib */,
+				F27B36221FEE7F5F008EEAEE /* DetailDivinationView.swift */,
+				F25094351FEDFA63004C299C /* DivinationViewController.swift */,
+				F25094331FEDF537004C299C /* DivinationCell.xib */,
+				F27B361C1FEE61C4008EEAEE /* DivinationCell.swift */,
+			);
+			path = Divination;
+			sourceTree = "<group>";
+		};
+		F27B36281FEF5AD1008EEAEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F25094231FEDEFC6004C299C /* Main.storyboard */,
+				F25094261FEDEFC6004C299C /* Assets.xcassets */,
+				F25094281FEDEFC6004C299C /* LaunchScreen.storyboard */,
+				F27B36271FEF5ABD008EEAEE /* Divination */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F27B36291FEF5AE1008EEAEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F27B362B1FEF5B19008EEAEE /* Divination */,
+				F27B362A1FEF5B0A008EEAEE /* API */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F27B362A1FEF5B0A008EEAEE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F25094371FEDFC11004C299C /* APIs.swift */,
+				F25094411FEE0F6E004C299C /* APIProtocols.swift */,
+				F250943F1FEE0F44004C299C /* APIRequestHelper.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F27B362B1FEF5B19008EEAEE /* Divination */ = {
+			isa = PBXGroup;
+			children = (
+				F27B361A1FEE5941008EEAEE /* DivinationLogic.swift */,
+				F250943D1FEDFE8E004C299C /* Sign.swift */,
+				F25094391FEDFD38004C299C /* DivinationResponseItem.swift */,
+			);
+			path = Divination;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +261,6 @@
 			files = (
 				F27B36251FEE8236008EEAEE /* DetailDivinationViewController.swift in Sources */,
 				F25094381FEDFC11004C299C /* APIs.swift in Sources */,
-				F250943C1FEDFD46004C299C /* DivinationRequestItem.swift in Sources */,
 				F250943E1FEDFE8E004C299C /* Sign.swift in Sources */,
 				F27B361D1FEE61C4008EEAEE /* DivinationCell.swift in Sources */,
 				F27B361B1FEE5941008EEAEE /* DivinationLogic.swift in Sources */,
