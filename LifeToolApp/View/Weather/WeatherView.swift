@@ -10,6 +10,7 @@ import UIKit
 
 final class WeatherView: UIView {
     
+    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var temp_maxLabel: UILabel!
@@ -26,14 +27,14 @@ final class WeatherView: UIView {
     private let hPa = "hPa"
     private let mps = "m/s"
     
-    required init(frame: CGRect, result: WeatherResponse) {
+    required init(frame: CGRect, result: WeatherResponse, locate: Location) {
         super.init(frame: frame)
         
         let nib = UINib(nibName: "WeatherView", bundle: nil)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
         view.frame = self.bounds
         self.addSubview(view)
-        configure(data: result)
+        configure(data: result, location: locate)
     }
     
     /// 使用しません
@@ -41,7 +42,8 @@ final class WeatherView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configure(data: WeatherResponse) {
+    private func configure(data: WeatherResponse, location: Location) {
+        locationLabel.text = location.prefecture + " " +  location.town + " " +  location.city
         weatherLabel.text = data.weather.first?.main?.weather.displayText
         tempLabel.text = makeDisplayStr(unit: degree, num: makeTemp(temp: data.main.temp))
         temp_maxLabel.text = makeDisplayStr(unit: degree, num: makeTemp(temp: data.main.temp_max))

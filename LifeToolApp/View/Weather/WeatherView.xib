@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="cloudsLabel" destination="UGm-II-T2o" id="3iI-8L-H4B"/>
                 <outlet property="humidityLabel" destination="aaf-pD-X0P" id="vY6-40-zvN"/>
+                <outlet property="locationLabel" destination="hby-th-eZe" id="uBM-Rd-V2D"/>
                 <outlet property="pressureLabel" destination="DFa-bK-yn8" id="CyS-gn-m32"/>
                 <outlet property="tempLabel" destination="66o-cb-35s" id="rRe-ov-GHF"/>
                 <outlet property="temp_maxLabel" destination="lPY-0L-Puc" id="W3u-dc-08J"/>

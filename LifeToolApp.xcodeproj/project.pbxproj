@@ -34,6 +34,7 @@
 		F27B36351FEF9162008EEAEE /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36341FEF9162008EEAEE /* WeatherViewController.swift */; };
 		F27B36371FEFA668008EEAEE /* WeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F27B36361FEFA668008EEAEE /* WeatherView.xib */; };
 		F27B36391FEFB5D9008EEAEE /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36381FEFB5D9008EEAEE /* WeatherView.swift */; };
+		F27B363C1FEFE0D8008EEAEE /* LocationResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B363B1FEFE0D8008EEAEE /* LocationResponseItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		F27B36341FEF9162008EEAEE /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		F27B36361FEFA668008EEAEE /* WeatherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherView.xib; sourceTree = "<group>"; };
 		F27B36381FEFB5D9008EEAEE /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		F27B363B1FEFE0D8008EEAEE /* LocationResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponseItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		F27B36291FEF5AE1008EEAEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F27B363A1FEFE0C5008EEAEE /* Location */,
 				F27B362C1FEF7CB0008EEAEE /* Wether */,
 				F27B362A1FEF5B0A008EEAEE /* API */,
 				F27B362B1FEF5B19008EEAEE /* Divination */,
@@ -197,6 +200,14 @@
 				F27B36361FEFA668008EEAEE /* WeatherView.xib */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		F27B363A1FEFE0C5008EEAEE /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				F27B363B1FEFE0D8008EEAEE /* LocationResponseItem.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 				F27B36391FEFB5D9008EEAEE /* WeatherView.swift in Sources */,
 				F250943E1FEDFE8E004C299C /* Sign.swift in Sources */,
 				F25094221FEDEFC6004C299C /* ViewController.swift in Sources */,
+				F27B363C1FEFE0D8008EEAEE /* LocationResponseItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

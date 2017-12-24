@@ -51,21 +51,21 @@ enum Weather: Int {
     /// 晴れ
     case clear = 1
     /// ちょっと曇り
-    case fewClouds
+    case fewClouds = 2
     /// 曇り
-    case scatteredClouds
+    case scatteredClouds = 3
     /// 曇天
-    case brokenClouds
-    /// 小雨
-    case lightRain
+    case brokenClouds = 4
     /// 豪雨
-    case heavyRain
+    case heavyRain = 9
+    /// 小雨
+    case lightRain = 10
     /// 雷雨
-    case thunderstorm
+    case thunderstorm = 11
     /// 雪
-    case snow
+    case snow = 13
     /// 災害系
-    case mist
+    case mist = 50
 }
 
 extension Weather {

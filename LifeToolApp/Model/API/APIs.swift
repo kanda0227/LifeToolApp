@@ -15,6 +15,8 @@ enum APIs {
     case divination
     /// 路線
     case rails
+    /// 現在地名
+    case location
 }
 
 extension APIs {
@@ -37,6 +39,10 @@ extension APIs {
         case .rails:
             // 未定
             return ""
+        case .location:
+            // TODO: 現在地の座標を取得して渡す
+            let xAndy = "&x=140&y=35"
+            return "http://geoapi.heartrails.com/api/json?method=searchByGeoLocation" + xAndy
         }
     }
 }
