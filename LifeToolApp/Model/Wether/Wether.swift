@@ -56,8 +56,16 @@ private extension String {
         // 直したい
         let array = self.map { "\($0)" }
         guard let a = Int(array[0]), let b = Int(array[1]) else { return nil }
-        let ch = array[2]
         let num = a * 10 + b
+        
+        // 本来であれば以下のように値を取得すべきである．
+        // let ch = array[2]
+        // どうやら日本時間になっていないようで日中と夜の画像があっていないためアプリ側で制御する
+        let dateFomatter = DateFormatter()
+        dateFomatter.dateFormat = "HH"
+        let hh = dateFomatter.string(from: Date())
+        guard let hhInt = Int(hh) else { return nil }
+        let ch = (hhInt >= 5) && (hhInt <= 19) ? "d" : "n"
         
         return (ch, num)
     }
