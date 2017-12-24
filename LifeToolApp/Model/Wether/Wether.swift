@@ -6,16 +6,44 @@
 //  Copyright © 2017 sena.kanda. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct WeatherSet {
     let weather: Weather
     let time: Time
+    var image: UIImage? {
+        return makeWeatherImage()
+    }
     
     init?(icon: String) {
         guard let value = icon.split(), let weather = Weather(rawValue: value.1), let time = Time(rawValue: value.0) else { return nil }
         self.weather = weather
         self.time = time
+    }
+    
+    private func makeWeatherImage() -> UIImage? {
+        switch (weather, time) {
+        case (.clear, .day):
+            return #imageLiteral(resourceName: "clear_d")
+        case (.clear, .night):
+            return #imageLiteral(resourceName: "clear_n")
+        case (.fewClouds, .day):
+            return #imageLiteral(resourceName: "fewClouds_d")
+        case (.fewClouds, .night):
+            return #imageLiteral(resourceName: "fewClouds_n")
+        case (.scatteredClouds, _), (.brokenClouds, _):
+            return #imageLiteral(resourceName: "clouds")
+        case (.lightRain, _):
+            return #imageLiteral(resourceName: "lightRain")
+        case (.heavyRain, _):
+            return #imageLiteral(resourceName: "heavyRain")
+        case (.thunderstorm, _):
+            return #imageLiteral(resourceName: "thunderstorm")
+        case (.snow, _):
+            return #imageLiteral(resourceName: "snow")
+        default:
+            return nil
+        }
     }
 }
 

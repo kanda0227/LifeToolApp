@@ -32,6 +32,8 @@
 		F27B36301FEF836D008EEAEE /* Wether.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B362F1FEF836D008EEAEE /* Wether.swift */; };
 		F27B36321FEF8E12008EEAEE /* WindChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36311FEF8E12008EEAEE /* WindChecker.swift */; };
 		F27B36351FEF9162008EEAEE /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36341FEF9162008EEAEE /* WeatherViewController.swift */; };
+		F27B36371FEFA668008EEAEE /* WeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F27B36361FEFA668008EEAEE /* WeatherView.xib */; };
+		F27B36391FEFB5D9008EEAEE /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36381FEFB5D9008EEAEE /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		F27B362F1FEF836D008EEAEE /* Wether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wether.swift; sourceTree = "<group>"; };
 		F27B36311FEF8E12008EEAEE /* WindChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindChecker.swift; sourceTree = "<group>"; };
 		F27B36341FEF9162008EEAEE /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		F27B36361FEFA668008EEAEE /* WeatherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherView.xib; sourceTree = "<group>"; };
+		F27B36381FEFB5D9008EEAEE /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				F27B36341FEF9162008EEAEE /* WeatherViewController.swift */,
+				F27B36381FEFB5D9008EEAEE /* WeatherView.swift */,
+				F27B36361FEFA668008EEAEE /* WeatherView.xib */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 				F25094271FEDEFC6004C299C /* Assets.xcassets in Resources */,
 				F27B361F1FEE6B4D008EEAEE /* DetailDivinationView.xib in Resources */,
 				F25094341FEDF537004C299C /* DivinationCell.xib in Resources */,
+				F27B36371FEFA668008EEAEE /* WeatherView.xib in Resources */,
 				F250942A1FEDEFC6004C299C /* LaunchScreen.storyboard in Resources */,
 				F25094251FEDEFC6004C299C /* Main.storyboard in Resources */,
 			);
@@ -302,6 +309,7 @@
 				F27B361B1FEE5941008EEAEE /* DivinationLogic.swift in Sources */,
 				F250943A1FEDFD38004C299C /* DivinationResponseItem.swift in Sources */,
 				F25094361FEDFA63004C299C /* DivinationViewController.swift in Sources */,
+				F27B36391FEFB5D9008EEAEE /* WeatherView.swift in Sources */,
 				F250943E1FEDFE8E004C299C /* Sign.swift in Sources */,
 				F25094221FEDEFC6004C299C /* ViewController.swift in Sources */,
 			);
