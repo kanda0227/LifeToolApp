@@ -43,7 +43,7 @@ final class WeatherView: UIView {
     }
     
     private func configure(data: WeatherResponse, location: Location) {
-        locationLabel.text = location.prefecture + " " +  location.town + " " +  location.city
+        locationLabel.text = location.prefecture + " " +  location.city + " " +  location.town
         weatherLabel.text = data.weather.first?.main?.weather.displayText
         tempLabel.text = makeDisplayStr(unit: degree, num: makeTemp(temp: data.main.temp))
         temp_maxLabel.text = makeDisplayStr(unit: degree, num: makeTemp(temp: data.main.temp_max))
@@ -61,7 +61,8 @@ final class WeatherView: UIView {
     }
     
     private func makeTemp(temp: Double) -> Double {
-        return temp - 273.15
+        let degreeTemp = temp - 273.15
+        return round(degreeTemp * 10) / 10
     }
 }
 

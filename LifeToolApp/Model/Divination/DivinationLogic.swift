@@ -12,6 +12,9 @@ enum DivinationLogic {
     
     /// 上位3つの星座をソートして返す
     static func filterTop3(_ data: [DivinationResult]) -> [Sign?] {
+        let tes = data.filter { $0.rank < 4 }.sorted(by: { (pre, post) in
+            pre.rank < post.rank
+        })
         return data.filter { $0.rank < 4 }.sorted(by: { (pre, post) in
             pre.rank < post.rank
         }).map { $0.sign }

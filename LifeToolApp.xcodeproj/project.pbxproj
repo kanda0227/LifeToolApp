@@ -35,6 +35,7 @@
 		F27B36371FEFA668008EEAEE /* WeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F27B36361FEFA668008EEAEE /* WeatherView.xib */; };
 		F27B36391FEFB5D9008EEAEE /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B36381FEFB5D9008EEAEE /* WeatherView.swift */; };
 		F27B363C1FEFE0D8008EEAEE /* LocationResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B363B1FEFE0D8008EEAEE /* LocationResponseItem.swift */; };
+		F27B363F1FEFF2F4008EEAEE /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B363E1FEFF2F4008EEAEE /* LocationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		F27B36361FEFA668008EEAEE /* WeatherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherView.xib; sourceTree = "<group>"; };
 		F27B36381FEFB5D9008EEAEE /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		F27B363B1FEFE0D8008EEAEE /* LocationResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponseItem.swift; sourceTree = "<group>"; };
+		F27B363E1FEFF2F4008EEAEE /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				F27B363B1FEFE0D8008EEAEE /* LocationResponseItem.swift */,
+				F27B363E1FEFF2F4008EEAEE /* LocationHelper.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -244,6 +247,11 @@
 					F250941B1FEDEFC6004C299C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -309,6 +317,7 @@
 				F27B36351FEF9162008EEAEE /* WeatherViewController.swift in Sources */,
 				F25094401FEE0F44004C299C /* APIRequestHelper.swift in Sources */,
 				F25094381FEDFC11004C299C /* APIs.swift in Sources */,
+				F27B363F1FEFF2F4008EEAEE /* LocationHelper.swift in Sources */,
 				F27B36321FEF8E12008EEAEE /* WindChecker.swift in Sources */,
 				F25094201FEDEFC6004C299C /* AppDelegate.swift in Sources */,
 				F27B36231FEE7F5F008EEAEE /* DetailDivinationView.swift in Sources */,
@@ -462,6 +471,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: bsr.kn.1046@icloud.com (Q323FT5RFT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -469,11 +480,13 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = LifeToolApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.senakanda.LifeToolApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senakanda.LifeToolApp-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -481,6 +494,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -488,11 +503,13 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = LifeToolApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.senakanda.LifeToolApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senakanda.LifeToolApp-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

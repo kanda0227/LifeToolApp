@@ -13,8 +13,8 @@ import ObjectMapper
 final class APIRequestHelper<ResponseItem: APIResponseItem> {
     
     /// APIリクエストを送信します
-    static public func requestAPI(_ apis: APIs, completion: @escaping (ResponseItem) -> Void) {
-        Alamofire.request(apis.url).responseString { response in
+    static public func requestAPI(_ apis: APIs, addParam: String = "", completion: @escaping (ResponseItem) -> Void) {
+        Alamofire.request(apis.url + addParam).responseString { response in
             guard let object: String = response.result.value else { return }
             completion(APIRequestHelper.parseData(jsonString: object))
         }

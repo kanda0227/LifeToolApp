@@ -27,8 +27,7 @@ extension APIs {
         case .weather:
             // このへん直書きしてるの直したい
             let appid = "APPID=c31afe1056c098c311ca7882f2b8d596"
-            let latAndLon = "&lat=35&lon=140"
-            return "http://api.openweathermap.org/data/2.5/weather?" + appid + latAndLon
+            return "http://api.openweathermap.org/data/2.5/weather?" + appid
             
         case .divination:
             let dateFomatter = DateFormatter()
@@ -40,9 +39,7 @@ extension APIs {
             // 未定
             return ""
         case .location:
-            // TODO: 現在地の座標を取得して渡す
-            let xAndy = "&x=140&y=35"
-            return "http://geoapi.heartrails.com/api/json?method=searchByGeoLocation" + xAndy
+            return "http://geoapi.heartrails.com/api/json?method=searchByGeoLocation"
         }
     }
 }
