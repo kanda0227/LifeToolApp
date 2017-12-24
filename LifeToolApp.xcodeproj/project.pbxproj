@@ -144,11 +144,11 @@
 		F27B36281FEF5AD1008EEAEE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F27B36331FEF9148008EEAEE /* Weather */,
 				F25094261FEDEFC6004C299C /* Assets.xcassets */,
 				F27B36271FEF5ABD008EEAEE /* Divination */,
 				F25094281FEDEFC6004C299C /* LaunchScreen.storyboard */,
 				F25094231FEDEFC6004C299C /* Main.storyboard */,
+				F27B36331FEF9148008EEAEE /* Weather */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,10 +156,10 @@
 		F27B36291FEF5AE1008EEAEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F27B363A1FEFE0C5008EEAEE /* Location */,
-				F27B362C1FEF7CB0008EEAEE /* Wether */,
 				F27B362A1FEF5B0A008EEAEE /* API */,
 				F27B362B1FEF5B19008EEAEE /* Divination */,
+				F27B363A1FEFE0C5008EEAEE /* Location */,
+				F27B362C1FEF7CB0008EEAEE /* Wether */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,9 +197,9 @@
 		F27B36331FEF9148008EEAEE /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				F27B36341FEF9162008EEAEE /* WeatherViewController.swift */,
 				F27B36381FEFB5D9008EEAEE /* WeatherView.swift */,
 				F27B36361FEFA668008EEAEE /* WeatherView.xib */,
+				F27B36341FEF9162008EEAEE /* WeatherViewController.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -207,8 +207,8 @@
 		F27B363A1FEFE0C5008EEAEE /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				F27B363B1FEFE0D8008EEAEE /* LocationResponseItem.swift */,
 				F27B363E1FEFF2F4008EEAEE /* LocationHelper.swift */,
+				F27B363B1FEFE0D8008EEAEE /* LocationResponseItem.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -281,9 +281,9 @@
 				F25094271FEDEFC6004C299C /* Assets.xcassets in Resources */,
 				F27B361F1FEE6B4D008EEAEE /* DetailDivinationView.xib in Resources */,
 				F25094341FEDF537004C299C /* DivinationCell.xib in Resources */,
-				F27B36371FEFA668008EEAEE /* WeatherView.xib in Resources */,
 				F250942A1FEDEFC6004C299C /* LaunchScreen.storyboard in Resources */,
 				F25094251FEDEFC6004C299C /* Main.storyboard in Resources */,
+				F27B36371FEFA668008EEAEE /* WeatherView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,25 +314,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25094421FEE0F6E004C299C /* APIProtocols.swift in Sources */,
-				F27B36351FEF9162008EEAEE /* WeatherViewController.swift in Sources */,
 				F25094401FEE0F44004C299C /* APIRequestHelper.swift in Sources */,
 				F25094381FEDFC11004C299C /* APIs.swift in Sources */,
-				F27B363F1FEFF2F4008EEAEE /* LocationHelper.swift in Sources */,
-				F27B36321FEF8E12008EEAEE /* WindChecker.swift in Sources */,
 				F25094201FEDEFC6004C299C /* AppDelegate.swift in Sources */,
 				F27B36231FEE7F5F008EEAEE /* DetailDivinationView.swift in Sources */,
 				F27B36251FEE8236008EEAEE /* DetailDivinationViewController.swift in Sources */,
-				F27B362E1FEF7CC6008EEAEE /* WeatherResponseItem.swift in Sources */,
 				F27B36211FEE7CC6008EEAEE /* Divination5StepEvaluationView.swift in Sources */,
 				F27B361D1FEE61C4008EEAEE /* DivinationCell.swift in Sources */,
-				F27B36301FEF836D008EEAEE /* Wether.swift in Sources */,
 				F27B361B1FEE5941008EEAEE /* DivinationLogic.swift in Sources */,
 				F250943A1FEDFD38004C299C /* DivinationResponseItem.swift in Sources */,
 				F25094361FEDFA63004C299C /* DivinationViewController.swift in Sources */,
-				F27B36391FEFB5D9008EEAEE /* WeatherView.swift in Sources */,
+				F27B363F1FEFF2F4008EEAEE /* LocationHelper.swift in Sources */,
+				F27B363C1FEFE0D8008EEAEE /* LocationResponseItem.swift in Sources */,
 				F250943E1FEDFE8E004C299C /* Sign.swift in Sources */,
 				F25094221FEDEFC6004C299C /* ViewController.swift in Sources */,
-				F27B363C1FEFE0D8008EEAEE /* LocationResponseItem.swift in Sources */,
+				F27B362E1FEF7CC6008EEAEE /* WeatherResponseItem.swift in Sources */,
+				F27B36391FEFB5D9008EEAEE /* WeatherView.swift in Sources */,
+				F27B36351FEF9162008EEAEE /* WeatherViewController.swift in Sources */,
+				F27B36301FEF836D008EEAEE /* Wether.swift in Sources */,
+				F27B36321FEF8E12008EEAEE /* WindChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
