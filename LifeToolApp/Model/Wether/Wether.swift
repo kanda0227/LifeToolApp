@@ -68,6 +68,32 @@ enum Weather: Int {
     case mist
 }
 
+extension Weather {
+    
+    public var displayText: String {
+        switch(self) {
+        case .clear:
+            return "快晴"
+        case .fewClouds:
+            return "晴れ"
+        case .scatteredClouds:
+            return "曇り"
+        case .brokenClouds:
+            return "すごく曇り"
+        case .lightRain:
+            return "小雨"
+        case .heavyRain:
+            return "雨"
+        case .thunderstorm:
+            return "雷雨"
+        case .snow:
+            return "雪"
+        case .mist:
+            return "災害系"
+        }
+    }
+}
+
 enum Time: String {
     /// 日中
     case day = "d"

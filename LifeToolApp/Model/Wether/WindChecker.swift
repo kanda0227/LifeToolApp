@@ -27,3 +27,16 @@ enum WindChecker {
         }
     }
 }
+
+extension WindChecker {
+    public var displayText: String {
+        switch self {
+        case .calm:
+            return "平穏"
+        case .gentle:
+            return "程よい"
+        case .strong:
+            return "強い"
+        }
+    }
+}
