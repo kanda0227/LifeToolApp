@@ -42,8 +42,9 @@ final class WeatherView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// データをView に反映します
     private func configure(data: WeatherResponse, location: Location) {
-        locationLabel.text = location.prefecture + " " +  location.city + " " +  location.town
+        locationLabel.text = location.prefecture + " " +  location.city
         weatherLabel.text = data.weather.first?.main?.weather.displayText
         tempLabel.text = makeDisplayStr(unit: degree, num: makeTemp(temp: data.main.temp))
         temp_maxLabel.text = makeDisplayStr(unit: degree, num: makeTemp(temp: data.main.temp_max))
@@ -56,16 +57,34 @@ final class WeatherView: UIView {
         weatherImageView.image = data.weather.first?.main?.image
     }
     
+    /// viewのデータをリセットします
+    private func resetView() {
+        locationLabel.text?.removeAll()
+        weatherLabel.text?.removeAll()
+        tempLabel.text?.removeAll()
+        temp_maxLabel.text?.removeAll()
+        temp_minLabel.text?.removeAll()
+        cloudsLabel.text?.removeAll()
+        pressureLabel.text?.removeAll()
+        humidityLabel.text?.removeAll()
+        windSpeedLabel.text?.removeAll()
+        windCheckLabel.text?.removeAll()
+        weatherImageView.image = nil
+    }
+    
+    /// 単位付きの数字を表示用のStringに変換します
     private func makeDisplayStr(unit: String, num: CountableType) -> String {
         return "\(num)" + unit
     }
     
+    /// 温度の単位をkから℃に変換します
     private func makeTemp(temp: Double) -> Double {
         let degreeTemp = temp - 273.15
         return round(degreeTemp * 10) / 10
     }
 }
 
+/// 数字型
 private protocol CountableType {}
 
 extension Int: CountableType {}

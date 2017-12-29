@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -69,13 +68,48 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZl-aU-NFd">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </scrollView>
+                            <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPf-EN-WmZ">
+                                <rect key="frame" x="158.5" y="312.5" width="57" height="57"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="75y-L5-XjQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P4p-7G-5CK">
+                                            <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="RGi-ko-RjK">
+                                                <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <color key="backgroundColor" red="0.59607843140000005" green="0.61176470589999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <vibrancyEffect>
+                                                <blurEffect style="dark"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fcs-dV-Uww">
+                                <rect key="frame" x="169" y="322.5" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="ynl-Sc-sof"/>
+                                    <constraint firstAttribute="width" constant="37" id="zc7-fs-oIM"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="zPf-EN-WmZ" firstAttribute="width" secondItem="fcs-dV-Uww" secondAttribute="width" constant="20" id="5pQ-nq-fww"/>
                             <constraint firstItem="fZl-aU-NFd" firstAttribute="top" secondItem="tCh-pe-P09" secondAttribute="top" id="MSM-aM-6j7"/>
+                            <constraint firstItem="fcs-dV-Uww" firstAttribute="centerX" secondItem="tCh-pe-P09" secondAttribute="centerX" id="N3i-yw-1e3"/>
+                            <constraint firstItem="fcs-dV-Uww" firstAttribute="centerY" secondItem="tCh-pe-P09" secondAttribute="centerY" id="NiI-Hm-T0H"/>
                             <constraint firstItem="fZl-aU-NFd" firstAttribute="leading" secondItem="HIj-La-Yny" secondAttribute="leading" id="PCc-AB-HY0"/>
                             <constraint firstItem="tCh-pe-P09" firstAttribute="bottom" secondItem="fZl-aU-NFd" secondAttribute="bottom" id="fxX-cA-5RT"/>
                             <constraint firstItem="tCh-pe-P09" firstAttribute="trailing" secondItem="fZl-aU-NFd" secondAttribute="trailing" id="ibb-Xa-6e1"/>
+                            <constraint firstItem="zPf-EN-WmZ" firstAttribute="centerX" secondItem="fcs-dV-Uww" secondAttribute="centerX" id="kyG-EI-0Ag"/>
+                            <constraint firstItem="zPf-EN-WmZ" firstAttribute="centerY" secondItem="fcs-dV-Uww" secondAttribute="centerY" id="lGk-PF-81T"/>
+                            <constraint firstItem="zPf-EN-WmZ" firstAttribute="height" secondItem="fcs-dV-Uww" secondAttribute="height" constant="20" id="zdl-ht-Ss1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tCh-pe-P09"/>
                     </view>
@@ -89,6 +123,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="blurView" destination="zPf-EN-WmZ" id="8Y5-JY-DfU"/>
+                        <outlet property="indicator" destination="fcs-dV-Uww" id="uqP-a5-mz6"/>
                         <outlet property="scrollView" destination="fZl-aU-NFd" id="Agc-4z-XVS"/>
                     </connections>
                 </viewController>

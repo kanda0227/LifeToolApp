@@ -41,8 +41,10 @@ struct WeatherSet {
             return #imageLiteral(resourceName: "thunderstorm")
         case (.snow, _):
             return #imageLiteral(resourceName: "snow")
-        default:
-            return nil
+        case (_, .day):
+            return #imageLiteral(resourceName: "clear_d")
+        case (_, .night):
+            return #imageLiteral(resourceName: "clear_n")
         }
     }
 }
@@ -89,7 +91,8 @@ extension Weather {
         case .snow:
             return "雪"
         case .mist:
-            return "災害系"
+            // なんかよく災害ってことになってるので...
+            return "晴れ"
         }
     }
 }
