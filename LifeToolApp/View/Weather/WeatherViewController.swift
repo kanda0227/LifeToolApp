@@ -17,6 +17,7 @@ final class WeatherViewController: UIViewController {
     @IBOutlet private weak var blurView: UIVisualEffectView!
     private var x: Double?
     private var y: Double?
+    private var weatherView: WeatherView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,11 @@ final class WeatherViewController: UIViewController {
         // ブラーを角丸にする
         blurView.layer.cornerRadius = 10
         blurView.layer.masksToBounds = true
+        weatherView = WeatherView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 725))
+        if let weatherView = weatherView {
+            scrollView.addSubview(weatherView)
+            scrollView.contentSize = weatherView.frame.size
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,11 +41,7 @@ final class WeatherViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
-        scrollView.subviews.forEach {
-            if $0 is WeatherView {
-                $0.removeFromSuperview()
-            }
-        }
+        weatherView?.resetView()
     }
     
     /// WeatherViewController を表示するためのAPIリクエストを走らせる
@@ -54,9 +56,7 @@ final class WeatherViewController: UIViewController {
                 guard let _self = self, let locate = response.result.first, let x = _self.x, let y = _self.y else { return }
                 _self.requestWeather(x: x, y: y, locate: locate) { [weak self] (data: WeatherResponseItem) -> Void in
                     guard let _self = self else { return }
-                    let view: WeatherView = WeatherView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 725), result: data.results, locate: locate)
-                    _self.scrollView.addSubview(view)
-                    _self.scrollView.contentSize = view.frame.size
+                    _self.weatherView?.configure(data: data.results, location: locate)
                     _self.switchActivityState(false)
                 }
             }
@@ -89,5 +89,9 @@ final class WeatherViewController: UIViewController {
         }
         self.indicator.isHidden = !isLoading
         self.blurView.isHidden = !isLoading
+    }
+    
+    @IBAction func tapRefreshButton(_ sender: UIBarButtonItem) {
+        requestWetherAPI()
     }
 }

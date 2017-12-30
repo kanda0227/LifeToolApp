@@ -114,13 +114,20 @@
                         <viewLayoutGuide key="safeArea" id="tCh-pe-P09"/>
                     </view>
                     <navigationItem key="navigationItem" title="今のお天気情報" id="WN7-AL-xIU">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="icA-cF-jjw">
-                            <connections>
-                                <segue destination="22h-MS-xBL" kind="popoverPresentation" popoverAnchorBarButtonItem="icA-cF-jjw" id="lbl-W4-G6n">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" id="icA-cF-jjw">
+                                <connections>
+                                    <segue destination="22h-MS-xBL" kind="popoverPresentation" popoverAnchorBarButtonItem="icA-cF-jjw" id="lbl-W4-G6n">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="RQO-lm-ivh">
+                                <connections>
+                                    <action selector="tapRefreshButton:" destination="VVX-Pg-6Gr" id="a2I-gA-TFb"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="blurView" destination="zPf-EN-WmZ" id="8Y5-JY-DfU"/>

@@ -27,14 +27,14 @@ final class WeatherView: UIView {
     private let hPa = "hPa"
     private let mps = "m/s"
     
-    required init(frame: CGRect, result: WeatherResponse, locate: Location) {
+    required override init(frame: CGRect) {
         super.init(frame: frame)
         
         let nib = UINib(nibName: "WeatherView", bundle: nil)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
         view.frame = self.bounds
         self.addSubview(view)
-        configure(data: result, location: locate)
+        resetView()
     }
     
     /// 使用しません
@@ -43,7 +43,7 @@ final class WeatherView: UIView {
     }
     
     /// データをView に反映します
-    private func configure(data: WeatherResponse, location: Location) {
+    func configure(data: WeatherResponse, location: Location) {
         locationLabel.text = location.prefecture + " " +  location.city
         weatherLabel.text = data.weather.first?.main?.weather.displayText
         tempLabel.text = makeDisplayStr(unit: degree, num: makeTemp(temp: data.main.temp))
@@ -58,7 +58,7 @@ final class WeatherView: UIView {
     }
     
     /// viewのデータをリセットします
-    private func resetView() {
+    func resetView() {
         locationLabel.text?.removeAll()
         weatherLabel.text?.removeAll()
         tempLabel.text?.removeAll()
