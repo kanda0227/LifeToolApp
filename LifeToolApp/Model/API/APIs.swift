@@ -15,6 +15,8 @@ enum APIs {
     case divination
     /// 路線
     case rails
+    /// 現在地名
+    case location
 }
 
 extension APIs {
@@ -23,16 +25,21 @@ extension APIs {
     public var url: String {
         switch self {
         case .weather:
-            // 未定
-            return ""
+            // このへん直書きしてるの直したい
+            let appid = "APPID=c31afe1056c098c311ca7882f2b8d596"
+            return "http://api.openweathermap.org/data/2.5/weather?" + appid
+            
         case .divination:
             let dateFomatter = DateFormatter()
             dateFomatter.dateFormat = "yyyy/MM/dd"
             let date = dateFomatter.string(from: Date())
             return "http://api.jugemkey.jp/api/horoscope/free/" + date
+            
         case .rails:
             // 未定
             return ""
+        case .location:
+            return "http://geoapi.heartrails.com/api/json?method=searchByGeoLocation"
         }
     }
 }

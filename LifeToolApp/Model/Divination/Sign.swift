@@ -71,6 +71,12 @@ extension Sign {
     
     public var image: UIImage? {
         switch self {
+        case .aries:
+            return #imageLiteral(resourceName: "aries")
+        case .taurus:
+            return #imageLiteral(resourceName: "taurus")
+        case .gemini:
+            return #imageLiteral(resourceName: "gemini")
         case .cancer:
             return #imageLiteral(resourceName: "cancer")
         case .leo:
@@ -89,9 +95,6 @@ extension Sign {
             return #imageLiteral(resourceName: "aquarius")
         case .pisces:
             return #imageLiteral(resourceName: "pisces")
-        default:
-            // まだ画像取り込んでない
-            return nil
         }
     }
     
@@ -113,10 +116,11 @@ extension Sign {
     private struct Iterator: IteratorProtocol {
         typealias Element = Sign
         
-        var current: Sign? = .aries
+        var current: Sign?
         
         public mutating func next() -> Element? {
-            current = Sign(rawValue: (current?.rawValue)! + 1)
+            let nextValue = (current == nil) ? 0 : ((current?.rawValue)! + 1)
+            current = Sign(rawValue: nextValue)
             return current
         }
     }

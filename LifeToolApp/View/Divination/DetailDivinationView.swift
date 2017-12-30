@@ -34,10 +34,6 @@ final class DetailDivinationView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setResult(_ result: DivinationResult?) {
-        self.result = result
-    }
-    
     func configure(result: DivinationResult) {
         
         totalView.evaluation(result.total)
